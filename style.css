@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+* {
+  font-family: "Lato", "Avenir Next", "Avenir", "Arial", sans-serif;
+  color: whitesmoke;
+}
+@keyframes changecolor {
+  2%,
+  100% {
+    border-color: #ffc815;
+  }
+}
+body,
+html {
+  background: #666;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 85vw;
+}
+h1 {
+  text-align: center;
+  margin-top: 0px;
+}
+#rng {
+  width: 85vw;
+  background-color: #333;
+  padding: 30px;
+  margin: 15px auto 0;
+  border-radius: 30px;
+}
+input[type="number"] {
+  background: transparent;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: whitesmoke;
+  border-bottom-width: 1px;
+  outline-width: 0px;
+  margin-top: 10px;
+  width: 140px;
+}
+input[type="number"]:hover,
+select:hover {
+  animation: changecolor 100s 1;
+}
+input[type="number"]:focus,
+select:focus {
+  border-color: #ffc815;
+}
+.flex-items:nth-child(1) {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
+  align-self: center;
+  order: 0;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ffc815;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-items:nth-child(2) {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
+  align-self: center;
+  order: 0;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ffc815;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ffc815;
+  border-radius: 10px;
+  font-size: 1.5em;
+  background: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 2em;
+}
+select {
+  width: 143px;
+  background: transparent;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid whitesmoke;
+  outline-width: 0px;
+}
+::placeholder {
+  color: #bbb;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #bbbb;
+}
+
+::-ms-input-placeholder {
+  color: #bbb;
+}
