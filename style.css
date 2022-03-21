@@ -30,14 +30,14 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 85vw;
+  width: 600px;
 }
 h1 {
   text-align: center;
   margin-top: 0px;
 }
 #rng {
-  width: 85vw;
+  width: 600px;
   background-color: #333;
   padding: 30px;
   margin: 15px auto 0;
